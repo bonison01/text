@@ -1,0 +1,8 @@
+{
+  "name": "Visual Text Extractor",
+  "description": "An application that uses your camera to take a photo of anything, extracts the text from the image using AI, and displays it in a text format.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}

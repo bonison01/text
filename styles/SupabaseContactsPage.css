@@ -1,0 +1,93 @@
+/* supabaseContactsPage.css */
+
+/* Table container for horizontal scroll if needed */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Desktop table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #1f2937; /* dark background */
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.action-buttons button {
+  background: #3b82f6;
+  border: none;
+  margin-right: 6px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile Card View */
+@media (max-width: 768px) {
+  /* Make table elements block to enable card layout */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none; /* hide header row */
+  }
+
+  tbody tr {
+    margin-bottom: 1rem;
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  }
+
+  tbody td {
+    border: none;
+    padding: 6px 0;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  tbody td::before {
+    /* Label text from data-label attribute */
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    white-space: nowrap;
+    color: #374151; /* dark gray */
+    content: attr(data-label);
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .action-buttons button {
+    margin-right: 10px;
+  }
+}
