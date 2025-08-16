@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { WebcamCapture } from '../components/WebcamCapture';
 import { LoadingSpinner } from '../components/LoadingSpinner';

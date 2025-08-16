@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../supabase/supabaseClient';
 import { ColumnConfig, ExtractedData } from '../types';
@@ -6,7 +7,7 @@ import { PrintIcon, EditIcon, TrashIcon } from '../components/Icons';
 import { HeaderNavigation } from '../components/HeaderNavigation';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
-import '../styles/supabaseContactsPage.css';
+import '../styles/SupabaseContactsPage.module.css';
 
 const DEFAULT_COLUMNS: ColumnConfig[] = [
   { key: 'six_digit_id', header: 'ID', visible: true },
