@@ -3,12 +3,14 @@
 /* Table container for horizontal scroll if needed */
 .table-wrapper {
   overflow-x: auto;
+  color: white; /* Ensure text is white by default */
 }
 
 /* Desktop table styles */
 table {
   width: 100%;
   border-collapse: collapse;
+  color: white; /* Ensure all text inside table is white */
 }
 
 thead th {
@@ -21,6 +23,7 @@ thead th {
 tbody td {
   border-bottom: 1px solid #ddd;
   padding: 10px;
+  color: white; /* Explicit white text */
 }
 
 .action-buttons button {
@@ -31,6 +34,7 @@ tbody td {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  color: white; /* White text on buttons */
 }
 
 .action-buttons button:hover {
@@ -55,10 +59,11 @@ tbody td {
 
   tbody tr {
     margin-bottom: 1rem;
-    background: #f9fafb;
+    background: #111827; /* dark background for cards */
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+    color: white; /* Ensure card text is white */
   }
 
   tbody td {
@@ -67,6 +72,7 @@ tbody td {
     position: relative;
     padding-left: 50%;
     text-align: left;
+    color: white; /* Ensure content is white */
   }
 
   tbody td::before {
@@ -77,7 +83,7 @@ tbody td {
     transform: translateY(-50%);
     font-weight: 600;
     white-space: nowrap;
-    color: #374151; /* dark gray */
+    color: #d1d5db; /* light gray label text */
     content: attr(data-label);
   }
 
@@ -89,5 +95,6 @@ tbody td {
 
   .action-buttons button {
     margin-right: 10px;
+    color: white; /* Ensure button text is white */
   }
 }
